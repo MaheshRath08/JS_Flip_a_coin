@@ -18,7 +18,6 @@
     position: relative;
     transform-style:preserve-3d ;
     margin: 0 auto;
-    animation:spin-tail 3s forwards;
 }
 img{
     width: 295px;
@@ -40,8 +39,11 @@ img{
     margin: 0 auto;
     cursor: pointer;
 }
+#flip:hover{
+    filter: brightness(0.9);
+}
 .tails{
-    /* transform: rotateX(180deg); */
+    transform: rotateX(180deg);
 }
 @keyframes spin-head {
     0%{transform: rotateX(0deg);}
@@ -49,5 +51,5 @@ img{
 }
 @keyframes spin-tail {
     0%{transform: rotateX(0deg);}
-    100%{transform: rotateX(2160deg);}
+    100%{transform: rotateX(1800deg);}
 }
