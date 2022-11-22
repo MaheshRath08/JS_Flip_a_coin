@@ -50,6 +50,15 @@ img{
 .tails{
     transform: rotateX(180deg);
 }
+.scores{
+    position: fixed;
+    right: 3rem;
+    top: 1rem;
+}
+.score{
+    font-size: 1.5rem;
+    color: #555;
+}
 @keyframes spin-head {
     0%{transform: rotateX(0deg);}
     100%{transform: rotateX(1980deg);}
